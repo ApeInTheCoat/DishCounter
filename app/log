@@ -1,0 +1,44 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:__main__:Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\Programming\Projects\DishCounter\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Programming\Projects\DishCounter\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Programming\Projects\DishCounter\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Programming\Projects\DishCounter\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Programming\Projects\DishCounter\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Programming\Projects\DishCounter\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Programming\Projects\DishCounter\app\main.py", line 13, in get_handler
+    return jsonify(get_recipes('cookbook.json'))
+  File "D:\Programming\Projects\DishCounter\app\common.py", line 9, in get_recipes
+    with open(json_file, 'r', encoding='UTF8') as cookbook:
+FileNotFoundError: [Errno 2] No such file or directory: 'cookbook.json'
+INFO:werkzeug:127.0.0.1 - - [27/Aug/2020 14:23:06] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:__main__:Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\Programming\Projects\DishCounter\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Programming\Projects\DishCounter\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Programming\Projects\DishCounter\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Programming\Projects\DishCounter\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\Programming\Projects\DishCounter\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Programming\Projects\DishCounter\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Programming\Projects\DishCounter\app\main.py", line 13, in get_handler
+    return jsonify(get_recipes('cookbook.json'))
+  File "D:\Programming\Projects\DishCounter\app\common.py", line 9, in get_recipes
+    with open(json_file, 'r', encoding='UTF8') as cookbook:
+FileNotFoundError: [Errno 2] No such file or directory: 'cookbook.json'
+INFO:werkzeug:127.0.0.1 - - [27/Aug/2020 14:23:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/Aug/2020 16:03:31] "[37mGET / HTTP/1.1[0m" 200 -
